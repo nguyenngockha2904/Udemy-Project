@@ -1,0 +1,106 @@
+#notice-streamer {
+  display: flex;
+  background-image: url(../../img/cover.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  align-items: center;
+
+  .carousel-fullscreen-sidebar {
+    width: 100%;
+    color: $color-white-0;
+    .notice-streamer__content {
+      width: 80%;
+      .notice-streamer__headline {
+        color: $color-white-0;
+        font-size: $fs-4;
+        font-style: normal;
+        font-weight: $fw-bold-1;
+        margin-bottom: 10px;
+        line-height: 1.17;
+      }
+      .notice-streamer__text {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.67;
+        font-weight: 100;
+      }
+      .input_search {
+        input {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-weight: 100;
+          border-right: none;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .input-group-append {
+          .input-group-text {
+            background-color: $color-white-0;
+            color: $color-red-0;
+            &:hover {
+              background-color: $color-red-0;
+              color: $color-white-0;
+              border-color: $color-red-0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //1360px
+  @include respond-to("max-sreen") {
+    .carousel-fullscreen-sidebar {
+      .notice-streamer__content {
+        &.mx-xl-5{
+          margin-left: 4rem!important;
+        }
+      }
+    }
+  }
+  //1200px
+  @include respond-to("extra-large") {
+  }
+  //992px
+  @include respond-to("large") {
+    .carousel-fullscreen-sidebar {
+      .notice-streamer__content {
+        width: 100%;
+        &.mx-xl-5{
+          margin-left: 2rem!important;
+        }
+      }
+    }
+  }
+  //768px
+  @include respond-to("medium") {
+    .carousel-fullscreen-sidebar {
+      .notice-streamer__content {
+        width: 70%;
+      }
+    }
+  }
+  //576px
+  @include respond-to("small") {
+    .carousel-fullscreen-sidebar {
+      .notice-streamer__content {
+        width: 100%;
+        .notice-streamer__headline {
+          font-size: $fs-4;
+          font-style: normal;
+          font-weight: $fw-bold-1;
+        }
+        .input_search {
+          .input-group{
+            width: 112%;
+          }
+          input {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

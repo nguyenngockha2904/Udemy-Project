@@ -1,0 +1,43 @@
+#top-categories {
+  margin: 40px 0;
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33em;
+    margin-bottom: 8px;
+  }
+  .row {
+    .categories {
+        padding-bottom: 15px;
+      .category-item {
+        display: flex;
+        box-shadow:0 1px 1px 2.1px #cacbccaf;
+        color: #14171c;
+        padding: 15px 10px;
+        transition: all 0.2s;
+        max-width: 100%;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 3px 1px #fff;
+          box-shadow: 0 1px 5px 3px #cacbcc;
+        }
+        .icon {
+          i {
+            font-size: 36px;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+          }
+        }
+        .content {
+          background-color: transparent;
+          font-weight: 400;
+          font-size: 15px;
+          margin-left: 7%;
+          align-self: center;
+        }
+      }
+    }
+  }
+}

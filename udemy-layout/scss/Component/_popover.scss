@@ -1,0 +1,55 @@
+.popover {
+  color: #686f7a;
+  max-width: 350px;
+  padding: 20px;
+  .popover-arrow {
+    h5 {
+      a {
+        white-space: normal;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.33;
+        letter-spacing: -0.3px;
+        color: #505763;
+      }
+    }
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      visibility: visible;
+      font-size: 15px;
+      line-height: 1.53;
+      letter-spacing: -0.2px;
+      color: #686f7a;
+      padding-top: 10px;
+    }
+    ul {
+      list-style-type: circle;
+      font-size: 14px;
+      padding: 0px;
+      padding-left: 11px;
+    }
+    .d-flex {
+      .btn {
+        background-color: #ec5252;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #992337;
+        }
+      }
+      i {
+        font-size: 25px;
+        font-weight: 100;
+        color: #ec5252;
+        transition: all 0.3s;
+        &:hover {
+          color: #992337;
+        }
+      }
+    }
+  }
+  @include respond-to("large") {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+@import "./Hepler/variable";
+//b1 Base folder
+@import "./Base/retset";
+//b2 Hepler
+@import "./Hepler/mixin";
+//b3 layout folder
+@import "./Layout/header";
+@import "./Layout/notice-streamer";
+@import "./Layout/course";
+@import "./Layout/onboarding";
+@import "./Layout/topCategories";
+@import "./Layout/feckback";
+@import "./Layout/footer";
+//b4 Component folder
+@import "Component/button";
+@import "./Component/popover";
